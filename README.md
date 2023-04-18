@@ -1,2 +1,2 @@
 # exercicios_logica
- Exercicios do curso de lógica de programação do IFRGS 
+ Exercicios do curso de lógica de programação do IFRS 
