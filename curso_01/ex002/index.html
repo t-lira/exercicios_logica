@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercicio 02 | Média ponderada</title>
+</head>
+<body>
+  <!--Imagine que seu professor deu 2 provas e 1 trabalho durante o semestre letivo. A primeira prova teve peso 2. A segunda prova teve peso 3. E o trabalho teve peso 4.  Agora que você é um programador, você deseja criar um programa que calcule a sua média nesse semestre.-->
+  <script>
+    let provaUm = parseFloat(prompt(`digite a nota da primeira prova:`));
+    let provaDois = parseFloat(prompt(`digite a nota da segunda prova:`));
+    let trabalho = parseFloat(prompt(`digite a nota do trabalho:`));
+
+    const calcularP1 = provaUm * 2 
+    const calcularP2 = provaDois * 3 
+    const calcularTrabalho = trabalho * 4 
+
+    const calcularMedia = (calcularP1 + calcularP2 + calcularTrabalho) / (2+3+4)
+
+    if(calcularMedia >= 6){
+      alert(`sua media foi de ${calcularMedia.toFixed(1)} e você foi aprovado`)
+    }else{
+      alert(`sua media foi de ${calcularMedia.toFixed(1)} e você esta de recuperação!`)
+    }
+  </script>  
+</body>
+</html>
